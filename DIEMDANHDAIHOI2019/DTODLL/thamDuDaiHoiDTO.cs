@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DTODLL
+﻿namespace DTODLL
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+
     public class thamDuDaiHoiDTO
     {
         private static thamDuDaiHoiDTO instance;

@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fSUB));
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.btnSave = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.btnSave = new DevExpress.XtraBars.BarButtonItem();
             this.documentViewer1 = new DevExpress.XtraPrinting.Preview.DocumentViewer();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             this.SuspendLayout();
@@ -61,6 +61,16 @@
             this.ribbon.Size = new System.Drawing.Size(1044, 125);
             this.ribbon.Toolbar.ShowCustomizeItem = false;
             // 
+            // btnSave
+            // 
+            this.btnSave.Caption = "LƯU";
+            this.btnSave.Id = 1;
+            this.btnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageOptions.Image")));
+            this.btnSave.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageOptions.LargeImage")));
+            this.btnSave.LargeWidth = 80;
+            this.btnSave.Name = "btnSave";
+            this.btnSave.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSave_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -72,16 +82,6 @@
             // 
             this.ribbonPageGroup1.ItemLinks.Add(this.btnSave);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            // 
-            // btnSave
-            // 
-            this.btnSave.Caption = "LƯU";
-            this.btnSave.Id = 1;
-            this.btnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageOptions.Image")));
-            this.btnSave.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageOptions.LargeImage")));
-            this.btnSave.LargeWidth = 80;
-            this.btnSave.Name = "btnSave";
-            this.btnSave.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSave_ItemClick);
             // 
             // documentViewer1
             // 

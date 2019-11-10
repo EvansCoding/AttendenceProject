@@ -1,17 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DevExpress.XtraEditors;
-using BUS;
-
-namespace DIEMDANHDAIHOI2019
+﻿namespace DIEMDANHDAIHOI2019
 {
+    using System;
+    using System.Windows.Forms;
+    using DevExpress.XtraEditors;
+    using BUS;
+
     public partial class fInsertDH : DevExpress.XtraEditors.XtraForm
     {
         public fInsertDH()

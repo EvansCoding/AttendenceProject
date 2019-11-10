@@ -1,29 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DevExpress.XtraEditors;
-using AForge.Video.DirectShow;
-using AForge.Video;
-using ZXing;
-using BUS;
-using static DIEMDANHDAIHOI2019.DIEMDANH.fTHONGTINDIEMDANH;
-using System.Globalization;
-
-namespace DIEMDANHDAIHOI2019.DIEMDANH
+﻿namespace DIEMDANHDAIHOI2019.DIEMDANH
 {
+    using AForge.Video;
+    using BUS;
+    using System;
+    using System.Drawing;
+    using System.Globalization;
+    using System.Windows.Forms;
+    using ZXing;
+    using static DIEMDANHDAIHOI2019.DIEMDANH.fTHONGTIN1920x1080;
+
     public partial class fCAMERA : DevExpress.XtraEditors.XtraForm
     {
         public fCAMERA(Guid _maDH)
         {
             InitializeComponent();
             this._maDH = _maDH;
-
         }
 
         public static resultHash rHash;
@@ -32,38 +23,14 @@ namespace DIEMDANHDAIHOI2019.DIEMDANH
             rHash = sender;
         }
         Guid _maDH;
-        private FilterInfoCollection capturedev;
-        private VideoCaptureDevice finalframe;
-
-        private void load()
-        {
-            capturedev = new FilterInfoCollection(FilterCategory.VideoInputDevice);
-            finalframe = new VideoCaptureDevice(capturedev[1].MonikerString);
-            finalframe.NewFrame += new NewFrameEventHandler(FinalFrame_NewFrame);
-            finalframe.Start();
-            timer1.Enabled = true;
-            timer1.Start();
-        }
-
-        private void FinalFrame_NewFrame(object sender, NewFrameEventArgs eventArgs)
-        {
-            try
-            {
-                ptCamera.Image = (Bitmap)eventArgs.Frame.Clone();
-
-            }
-            catch (Exception)
-            {
-            }
-        }
-        private void NewFrame(object sender, NewFrameEventArgs eventArgs)
-        {
-            Bitmap video = (Bitmap)eventArgs.Frame.Clone();
-            ptCamera.Image = video;
-        }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            if (mjp.FramesReceived != 0)
+            {
+                pnlIPCam.Hide();
+            }
+
             BarcodeReader reader = new BarcodeReader
             {
                 AutoRotate = true,
@@ -75,35 +42,36 @@ namespace DIEMDANHDAIHOI2019.DIEMDANH
             };
 
             Result result;
-            if (ptCamera.Image != null)
+            if (imgCamera != null)
             {
                 try
                 {
-                    result = reader.Decode((Bitmap)ptCamera.Image);
-                    string decoded = result.ToString().Trim();
-                    if (decoded != null)
+                    result = reader.Decode(imgCamera);
+                    if (result != null)
                     {
-                        string hashing = decoded;
-                        MessageBox.Show(hashing);
-                        object[] oj = doanVienBUS.Instance.getByHash(hashing);
-                        if (oj != null)
+                        string decoded = result.ToString().Trim();
+                        if (decoded != null)
                         {
-                           
-                            lbTEN.Text = toTitleCase( oj[1] as string + " "+ oj[2] as string);
-                            lbGIOITINH.Text = oj[4] as string;
-                            lbNGUYENQUAN.Text = oj[5] as string;
-                            lbDANTOC.Text = oj[6] as string;
-                            lbTONGIAO.Text = oj[7] as string;
-                            lbCHUYENMON.Text = oj[8] as string;
-                            lbDONVI.Text = oj[12] as string;
+                            string hashing = decoded;
+                            object[] oj = doanVienBUS.Instance.getByHash(hashing);
+                            if (oj != null)
+                            {
+                                lbTEN.Text = (oj[1] as string + " " + oj[2] as string).ToUpper();
+                                lbGIOITINH.Text = toTitleCase(oj[4] as string);
+                                lbNGUYENQUAN.Text = toTitleCase(oj[5] as string);
+                                lbDANTOC.Text = toTitleCase(oj[6] as string);
+                                lbTONGIAO.Text = toTitleCase(oj[7] as string);
+                                lbCHUYENMON.Text = toTitleCase(oj[8] as string);
+                                lbDONVI.Text = toTitleCase(oj[12] as string);
 
-                            ptMain.Image = Image.FromFile(Application.StartupPath + "\\" + "Images\\" + oj[0] + ".jpg");
-                            Guid guid = new Guid(oj[13] as string);
-                            if(thamDuDaiHoiBUS.Instance.getTime(guid, _maDH)== null)
-                                thamDuDaiHoiBUS.Instance.setStatus(guid, _maDH);
-                            rHash(hashing);
-                            timer1.Stop();
-                            timer2.Start();
+                                ptMain.Image = Image.FromFile(Application.StartupPath + "\\" + "Images\\" + oj[0] + ".jpg");
+                                Guid guid = new Guid(oj[13] as string);
+                                if (thamDuDaiHoiBUS.Instance.getTime(guid, _maDH) == null)
+                                    thamDuDaiHoiBUS.Instance.setStatus(guid, _maDH);
+                                rHash(hashing);
+                                timer1.Stop();
+                                timer2.Start();
+                            }
                         }
                     }
                 }
@@ -124,27 +92,29 @@ namespace DIEMDANHDAIHOI2019.DIEMDANH
 
         private void fCAMERA_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (finalframe != null)
-            {
-                if (finalframe.IsRunning == true)
-                {
-                    finalframe.Stop();
-                }
-            }
             fQUANLY.Instance.Show();
-            //fTHONGTINDIEMDANH.Close();
+            timer1.Stop();
+            timer2.Stop();
+            if (mjp != null)
+                mjp.Stop();
         }
+
         fTHONGTIN1920x1080 fTHONGTINDIEMDANH1920;
-        fTHONGTINDIEMDANH fTHONGTINDIEMDANH;
+        fTHONGTIN1366X768 fTHONGTIN1366X768;
         private void fCAMERA_Load(object sender, EventArgs e)
         {
-            load();
-            fTHONGTINDIEMDANH1920 = new fTHONGTIN1920x1080(_maDH);
-            fTHONGTINDIEMDANH1920.Show();
-
-            //fTHONGTINDIEMDANH = new fTHONGTINDIEMDANH(_maDH);
-            //fTHONGTINDIEMDANH.Show();
+            if (Screen.PrimaryScreen.Bounds.Width >= 1900 && Screen.PrimaryScreen.Bounds.Height >= 1000)
+            {
+                fTHONGTINDIEMDANH1920 = new fTHONGTIN1920x1080(_maDH);
+                fTHONGTINDIEMDANH1920.Show();
+            }
+            else
+            {
+                fTHONGTIN1366X768 = new fTHONGTIN1366X768(_maDH);
+                fTHONGTIN1366X768.Show();
+            }
         }
+
         bool check = true;
         private void fCAMERA_KeyDown(object sender, KeyEventArgs e)
         {
@@ -163,6 +133,23 @@ namespace DIEMDANHDAIHOI2019.DIEMDANH
                     check = true;
                 }
             }
+        }
+
+        MJPEGStream mjp;
+        private void btnConnectCamera_Click(object sender, EventArgs e)
+        {
+            string ipCon = "http://" + tbIPCam.Text + ":4747/mjpegfeed?960x720";
+            mjp = new MJPEGStream(ipCon);
+            mjp.NewFrame += Mjp_NewFrame;
+            mjp.Start();
+            timer1.Enabled = true;
+            timer1.Start();
+        }
+
+        static Bitmap imgCamera;
+        private void Mjp_NewFrame(object sender, NewFrameEventArgs eventArgs)
+        {
+            imgCamera = (Bitmap)eventArgs.Frame.Clone();
         }
     }
 }

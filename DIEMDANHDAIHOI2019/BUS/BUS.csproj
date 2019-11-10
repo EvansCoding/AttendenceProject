@@ -55,7 +55,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Constant.cs" />
     <Compile Include="Classes\ExcelDataBaseHelper.cs" />
     <Compile Include="Classes\GuidComb.cs" />
     <Compile Include="Classes\Hash.cs" />

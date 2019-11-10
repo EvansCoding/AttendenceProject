@@ -1,12 +1,9 @@
-﻿using DTODLL;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BUS
+﻿namespace BUS
 {
+    using DTODLL;
+    using System;
+    using System.Collections.Generic;
+
     public class GeneralClass
     {
         private static GeneralClass instance;
@@ -29,14 +26,24 @@ namespace BUS
             Guid guid = new Guid("ebcc01db-fb22-4107-988a-bcd40f80ac3b");
             Guid maDH = daiHoiBUS.Instance.insertDH(_chuDe, _ngay);
             List<DOANVIEN> dvList = new List<DOANVIEN>();
-            dvList = doanVienBUS.Instance.InsertAllDV(_pathExcel, _pathImages);
-            if (maDH != guid && dvList != null)
+            try
             {
-                if (thamDuDaiHoiBUS.Instance.insertTHAMDU(maDH, dvList))
-                    return true;
+                dvList = doanVienBUS.Instance.InsertAllDV(_pathExcel, _pathImages);
+                if(dvList != null)
+                {
+                    if (maDH != guid && dvList != null)
+                    {
+                        if (thamDuDaiHoiBUS.Instance.insertTHAMDU(maDH, dvList))
+                            return true;
+                    }
+                }
             }
+            catch (Exception)
+            {
+            }
+            daiHoiBUS.Instance.deleteDaiHoi(maDH);
             dvList.Clear();
-            return false; 
+            return false;
         }
     }
 }

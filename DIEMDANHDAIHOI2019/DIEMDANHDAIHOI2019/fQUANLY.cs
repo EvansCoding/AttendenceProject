@@ -1,20 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DevExpress.XtraBars;
-using BUS;
-using DIEMDANHDAIHOI2019.Report;
-using DIEMDANHDAIHOI2019.DIEMDANH;
-using DTODLL;
-
-namespace DIEMDANHDAIHOI2019
+﻿namespace DIEMDANHDAIHOI2019
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Data;
+    using System.Windows.Forms;
+    using DevExpress.XtraBars;
+    using BUS;
+    using DIEMDANHDAIHOI2019.Report;
+    using DIEMDANHDAIHOI2019.DIEMDANH;
+    using DTODLL;
+
     public partial class fQUANLY : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         public fQUANLY()
@@ -35,15 +30,6 @@ namespace DIEMDANHDAIHOI2019
                 instance = value;
             }
         }
-        #region EVENTS
-        private void btnAdd_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            fInsertDH fInsertDH = new fInsertDH();
-            DialogResult dialog = fInsertDH.ShowDialog();
-            if (dialog == DialogResult.Cancel)
-                refresh();
-        }
-        #endregion
 
         #region METHODS
         List<Guid> guids = new List<Guid>();
@@ -65,6 +51,14 @@ namespace DIEMDANHDAIHOI2019
         #endregion
 
         #region EVENTS
+        private void btnAdd_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            fInsertDH fInsertDH = new fInsertDH();
+            DialogResult dialog = fInsertDH.ShowDialog();
+            if (dialog == DialogResult.Cancel)
+                refresh();
+        }
+
         private void fQUANLY_Load(object sender, EventArgs e)
         {
             refresh();
@@ -75,8 +69,6 @@ namespace DIEMDANHDAIHOI2019
             refresh();
         }
         static int id;
-
-
 
         private void btnDelete_ItemClick(object sender, ItemClickEventArgs e)
         {
@@ -106,7 +98,6 @@ namespace DIEMDANHDAIHOI2019
                 }
             }
 
-            //    if (!check) BUS.daiHoiBUS.Instance.deleteDaiHoi(guids[id - 1]);
             refresh();
         }
 
@@ -114,12 +105,9 @@ namespace DIEMDANHDAIHOI2019
         {
             try
             {
-
                 fCAMERA fCamera= new fCAMERA(guids[id - 1]);
                 fCamera.Show();
-
                 this.Hide();
-
             }
             catch (Exception ex)
             {
@@ -150,20 +138,17 @@ namespace DIEMDANHDAIHOI2019
             {
             }
         }
-        #endregion
 
         private void gridView1_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
         {
             id = Convert.ToInt16(gridView1.GetRowCellValue(gridView1.FocusedRowHandle, gridView1.Columns[0]));
-           // thamDuDaiHoiBUS thamDuDaiHoiBUS = new thamDuDaiHoiBUS();
-
             gridControl2.DataSource = thamDuDaiHoiBUS.Instance.dsDoanVienThamGia(guids[id - 1]);
         }
 
         private void btnDeleteAll_ItemClick(object sender, ItemClickEventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("Bạn chắc chứ!", "Thông báo!", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if(dialogResult == DialogResult.OK)
+            if (dialogResult == DialogResult.OK)
             {
                 if (Entities.Instance.deleteAll())
                     MessageBox.Show("XÓA THÀNH CÔNG!", "THÔNG BÁO!", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -171,5 +156,11 @@ namespace DIEMDANHDAIHOI2019
             }
             refresh();
         }
+
+        private void fQUANLY_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.ExitThread();
+        }
+        #endregion
     }
 }

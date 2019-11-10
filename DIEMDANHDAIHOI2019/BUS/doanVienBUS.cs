@@ -1,16 +1,13 @@
-﻿using BUS.Classes;
-using DTODLL;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace BUS
+﻿namespace BUS
 {
+    using BUS.Classes;
+    using DTODLL;
+    using System;
+    using System.Collections.Generic;
+    using System.Data;
+    using System.Drawing;
+    using System.Windows.Forms;
+
     public class doanVienBUS
     {
         private static doanVienBUS instance;
@@ -27,6 +24,7 @@ namespace BUS
                 instance = value;
             }
         }
+
         public List<DOANVIEN> InsertAllDV(string _pathExcel,string _pathImage)
         {
             List<DOANVIEN> list = insertDVtoEXCEL(openFileExcel(_pathExcel), _pathImage);
@@ -85,11 +83,14 @@ namespace BUS
                 tempList.Add(dv);
             }
 
-            if (doanVienDTO.Instance.InsertListDV(dvList))
+            if (dvList != null && doanVienDTO.Instance.InsertListDV(dvList))
             {
                 if(saveImages.Instance.saveImageToFolderImages(_pathImage))
                     return tempList;
             }
+            if (tempList != null)
+                return tempList;
+
             return null;
         }
 
@@ -126,9 +127,7 @@ namespace BUS
                     dataRow[4] = image;
                     dt.Rows.Add(dataRow);
                 }
-
             }
-
             return dt;
         }
 

@@ -1,16 +1,11 @@
-﻿using BUS.Classes;
-using DTODLL;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace BUS
+﻿namespace BUS
 {
+    using BUS.Classes;
+    using DTODLL;
+    using System;
+    using System.Collections.Generic;
+    using System.Data;
+
     public class daiHoiBUS
     {
         private static daiHoiBUS instance;
@@ -77,8 +72,6 @@ namespace BUS
         {
             if (daiHoiDTO.Instance.deleteDH(_maDH)) return true;
             return false;
-        }
-
-        
+        }        
     }
 }

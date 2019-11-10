@@ -391,6 +391,7 @@
             this.Ribbon = this.ribbon;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PHẦN MỀM QUẢN LÝ ĐẠI HỘI";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fQUANLY_FormClosing);
             this.Load += new System.EventHandler(this.fQUANLY_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();

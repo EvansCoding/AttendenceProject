@@ -1,20 +1,18 @@
-﻿using System;
-using System.Drawing;
-using System.Collections;
-using System.ComponentModel;
-using DevExpress.XtraReports.UI;
-using DTODLL;
-
-namespace DIEMDANHDAIHOI2019.Report
+﻿namespace DIEMDANHDAIHOI2019.Report
 {
+    using System;
+    using DTODLL;
+
     public partial class rpTHONGKE : DevExpress.XtraReports.UI.XtraReport
     {
+        Guid _maDH;
+
         public rpTHONGKE(Guid guid)
         {
             InitializeComponent();
             _maDH = guid;
         }
-        Guid _maDH;
+
         public void load()
         {
             object[] oj = thamDuDaiHoiDTO.Instance.soLuongDaiBieu(_maDH);

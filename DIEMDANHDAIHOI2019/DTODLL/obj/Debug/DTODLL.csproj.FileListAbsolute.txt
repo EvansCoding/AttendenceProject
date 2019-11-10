@@ -5,3 +5,10 @@ C:\Users\nguye\source\repos\DIEMDANHDAIHOI2019\DTODLL\obj\Debug\DTODLL.csprojAss
 C:\Users\nguye\source\repos\DIEMDANHDAIHOI2019\DTODLL\obj\Debug\DTODLL.csproj.CoreCompileInputs.cache
 C:\Users\nguye\source\repos\DIEMDANHDAIHOI2019\DTODLL\obj\Debug\DTODLL.dll
 C:\Users\nguye\source\repos\DIEMDANHDAIHOI2019\DTODLL\obj\Debug\DTODLL.pdb
+D:\Projects\AttendenceProject\DIEMDANHDAIHOI2019\DTODLL\bin\Debug\DTODLL.dll.config
+D:\Projects\AttendenceProject\DIEMDANHDAIHOI2019\DTODLL\bin\Debug\DTODLL.dll
+D:\Projects\AttendenceProject\DIEMDANHDAIHOI2019\DTODLL\bin\Debug\DTODLL.pdb
+D:\Projects\AttendenceProject\DIEMDANHDAIHOI2019\DTODLL\obj\Debug\DTODLL.csprojAssemblyReference.cache
+D:\Projects\AttendenceProject\DIEMDANHDAIHOI2019\DTODLL\obj\Debug\DTODLL.csproj.CoreCompileInputs.cache
+D:\Projects\AttendenceProject\DIEMDANHDAIHOI2019\DTODLL\obj\Debug\DTODLL.dll
+D:\Projects\AttendenceProject\DIEMDANHDAIHOI2019\DTODLL\obj\Debug\DTODLL.pdb

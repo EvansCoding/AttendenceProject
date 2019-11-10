@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DevExpress.XtraEditors;
-using DTODLL;
-using System.Globalization;
-namespace DIEMDANHDAIHOI2019.DIEMDANH
+﻿namespace DIEMDANHDAIHOI2019.DIEMDANH
 {
+    using DTODLL;
+    using System;
+    using System.Collections.Generic;
+    using System.Drawing;
+    using System.Globalization;
+    using System.Windows.Forms;
+
     public partial class fTHONGTIN1920x1080 : DevExpress.XtraEditors.XtraForm
     {
         public fTHONGTIN1920x1080(Guid guid)
@@ -22,10 +17,6 @@ namespace DIEMDANHDAIHOI2019.DIEMDANH
         }
         bool check = true;
 
-        private void labelControl10_Click(object sender, EventArgs e)
-        {
-
-        }
         public delegate void resultHash(String value);
         private string resultHashing;
 
@@ -33,6 +24,7 @@ namespace DIEMDANHDAIHOI2019.DIEMDANH
         {
             resultHashing = value;
         }
+
         private void fTHONGTIN1920x1080_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.F11 && check)
@@ -51,16 +43,17 @@ namespace DIEMDANHDAIHOI2019.DIEMDANH
                 }
             }
         }
+
         private void showMain(DOANVIEN dv)
         {
-           lbTEN.Text = dv.HOLOT.ToUpper() + " " + dv.TEN.ToUpper();
+            lbTEN.Text = dv.HOLOT.ToUpper() + " " + dv.TEN.ToUpper();
             ptMain.Image = Image.FromFile(Application.StartupPath + "\\Images\\" + dv.CMND + ".jpg");
             lbGIOITINH.Text = dv.NAM == true ? "Nam" : "Nữ";
             lbNGUYENQUAN.Text = dv.NGUYENQUAN == "" ? "Không Có" : toTitleCase(dv.NGUYENQUAN);
             lbDANTOC.Text = dv.DANTOC == "" ? "Không Có" : toTitleCase(dv.DANTOC);
-           lbTONGIAO.Text = dv.TONGIAO == "" ? "Không Có" : toTitleCase(dv.TONGIAO);
-           lbCHUYENMON.Text = dv.CMNV == "" ? "Không Có" : toTitleCase(dv.CMNV);
-           lbDONVI.Text = dv.DONVI == "" ? "Không Có" : toTitleCase(dv.DONVI);
+            lbTONGIAO.Text = dv.TONGIAO == "" ? "Không Có" : toTitleCase(dv.TONGIAO);
+            lbCHUYENMON.Text = dv.CMNV == "" ? "Không Có" : toTitleCase(dv.CMNV);
+            lbDONVI.Text = dv.DONVI == "" ? "Không Có" : toTitleCase(dv.DONVI);
         }
 
         public string toTitleCase(string _str)
@@ -101,6 +94,7 @@ namespace DIEMDANHDAIHOI2019.DIEMDANH
             }
 
         }
+
         public void showClient(DOANVIEN _clientName)
         {
 
@@ -110,10 +104,11 @@ namespace DIEMDANHDAIHOI2019.DIEMDANH
                 flpAllUser.Controls.Add(uS_ShortInfo);
             }));
         }
+
         public static Guid _maDH;
         List<string> ds = new List<string>();
-
         List<DOANVIEN> dvl;
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             fCAMERA.mothodHasing(SetValue);
@@ -121,7 +116,6 @@ namespace DIEMDANHDAIHOI2019.DIEMDANH
             if (!ds.Contains(resultHashing) && resultHashing != null)
             {
                 ds.Add(resultHashing);
-                // doanVienBUS dvBUS = new doanVienBUS();
                 DOANVIEN dv = doanVienDTO.Instance.getByHash(resultHashing);
                 showMain(dv);
                 resultHashing = null;

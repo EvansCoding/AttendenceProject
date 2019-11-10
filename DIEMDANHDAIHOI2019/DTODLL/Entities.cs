@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DTODLL
+﻿namespace DTODLL
 {
+    using System;
+
     public class Entities
     {
         private static Entities instance;

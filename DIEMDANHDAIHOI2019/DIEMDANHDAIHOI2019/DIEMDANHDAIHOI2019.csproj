@@ -95,29 +95,29 @@
     <Compile Include="DIEMDANH\fCAMERA.Designer.cs">
       <DependentUpon>fCAMERA.cs</DependentUpon>
     </Compile>
+    <Compile Include="DIEMDANH\fTHONGTIN1366X768.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DIEMDANH\fTHONGTIN1366X768.Designer.cs">
+      <DependentUpon>fTHONGTIN1366X768.cs</DependentUpon>
+    </Compile>
     <Compile Include="DIEMDANH\fTHONGTIN1920x1080.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DIEMDANH\fTHONGTIN1920x1080.Designer.cs">
       <DependentUpon>fTHONGTIN1920x1080.cs</DependentUpon>
     </Compile>
-    <Compile Include="DIEMDANH\fTHONGTINDIEMDANH.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DIEMDANH\fTHONGTINDIEMDANH.Designer.cs">
-      <DependentUpon>fTHONGTINDIEMDANH.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DIEMDANH\US_ShortInfo.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DIEMDANH\US_ShortInfo.Designer.cs">
-      <DependentUpon>US_ShortInfo.cs</DependentUpon>
-    </Compile>
     <Compile Include="DIEMDANH\US_ShortInfo1920x1080.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="DIEMDANH\US_ShortInfo1920x1080.Designer.cs">
       <DependentUpon>US_ShortInfo1920x1080.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DIEMDANH\US_ShortInfor1366x768.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DIEMDANH\US_ShortInfor1366x768.Designer.cs">
+      <DependentUpon>US_ShortInfor1366x768.cs</DependentUpon>
     </Compile>
     <Compile Include="fInsertDH.cs">
       <SubType>Form</SubType>
@@ -160,17 +160,17 @@
     <EmbeddedResource Include="DIEMDANH\fCAMERA.resx">
       <DependentUpon>fCAMERA.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DIEMDANH\fTHONGTIN1366X768.resx">
+      <DependentUpon>fTHONGTIN1366X768.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DIEMDANH\fTHONGTIN1920x1080.resx">
       <DependentUpon>fTHONGTIN1920x1080.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DIEMDANH\fTHONGTINDIEMDANH.resx">
-      <DependentUpon>fTHONGTINDIEMDANH.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DIEMDANH\US_ShortInfo.resx">
-      <DependentUpon>US_ShortInfo.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DIEMDANH\US_ShortInfo1920x1080.resx">
       <DependentUpon>US_ShortInfo1920x1080.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DIEMDANH\US_ShortInfor1366x768.resx">
+      <DependentUpon>US_ShortInfor1366x768.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fInsertDH.resx">
       <DependentUpon>fInsertDH.cs</DependentUpon>

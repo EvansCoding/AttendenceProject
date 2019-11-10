@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DevExpress.XtraEditors;
-using DIEMDANHDAIHOI2019.Report;
-using DTODLL;
+﻿
 
 namespace DIEMDANHDAIHOI2019
 {
+    using System;
+    using System.Windows.Forms;
+    using DevExpress.XtraEditors;
+    using DIEMDANHDAIHOI2019.Report;
+    using DTODLL;
+
     public partial class fTHONGKE : DevExpress.XtraEditors.XtraForm
     {
         public fTHONGKE(Guid guid)

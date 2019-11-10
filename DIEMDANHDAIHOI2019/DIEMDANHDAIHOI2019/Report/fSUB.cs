@@ -1,18 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DevExpress.XtraBars;
-using DevExpress.XtraEditors;
-using BUS;
-
-namespace DIEMDANHDAIHOI2019.Report
+﻿namespace DIEMDANHDAIHOI2019.Report
 {
+    using System;
+    using System.Windows.Forms;
+    using DevExpress.XtraBars;
+    using DevExpress.XtraEditors;
+    using BUS;
+
     public partial class fSUB : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         public fSUB(Guid _id)
@@ -20,8 +13,10 @@ namespace DIEMDANHDAIHOI2019.Report
             InitializeComponent();
             id = _id;
         }
+
         Guid id;
         rpTHEDAIHOI reportItem;
+
         private void exportPDF(string path, string ID = null)
         {
             reportItem.PaperKind = System.Drawing.Printing.PaperKind.Letter;
@@ -58,7 +53,6 @@ namespace DIEMDANHDAIHOI2019.Report
         private void fSUB_Load(object sender, EventArgs e)
         {
             reportItem = new rpTHEDAIHOI();
-
             reportItem.DataSource = doanVienBUS.Instance.printDSDV(id);
             reportItem.BindList();
             documentViewer1.PrintingSystem = reportItem.PrintingSystem;

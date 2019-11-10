@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace BUS.Classes
+﻿namespace BUS.Classes
 {
+    using System;
+    using System.Drawing;
+    using System.IO;
+    using System.Windows.Forms;
+
     public class saveImages
     {
         private static saveImages instance;

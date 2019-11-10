@@ -31,6 +31,8 @@
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            this.lbPTTHPT = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel14 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
@@ -120,8 +122,8 @@
             this.lbCaoCap = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel68 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel67 = new DevExpress.XtraReports.UI.XRLabel();
-            this.lbPTTHPT = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel14 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel9 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel17 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // TopMargin
@@ -135,6 +137,8 @@
             // Detail
             // 
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel17,
+            this.xrLabel9,
             this.lbPTTHPT,
             this.xrLabel14,
             this.xrLabel1,
@@ -229,6 +233,32 @@
             this.Detail.HeightF = 737.5F;
             this.Detail.Name = "Detail";
             // 
+            // lbPTTHPT
+            // 
+            this.lbPTTHPT.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPTTHPT.LocationFloat = new DevExpress.Utils.PointFloat(480.6522F, 569.1422F);
+            this.lbPTTHPT.Multiline = true;
+            this.lbPTTHPT.Name = "lbPTTHPT";
+            this.lbPTTHPT.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lbPTTHPT.SizeF = new System.Drawing.SizeF(35.32245F, 23F);
+            this.lbPTTHPT.StylePriority.UseFont = false;
+            this.lbPTTHPT.StylePriority.UseTextAlignment = false;
+            this.lbPTTHPT.Text = "0";
+            this.lbPTTHPT.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            // 
+            // xrLabel14
+            // 
+            this.xrLabel14.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrLabel14.LocationFloat = new DevExpress.Utils.PointFloat(515.9747F, 569.1422F);
+            this.xrLabel14.Multiline = true;
+            this.xrLabel14.Name = "xrLabel14";
+            this.xrLabel14.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel14.SizeF = new System.Drawing.SizeF(20.10541F, 23F);
+            this.xrLabel14.StylePriority.UseFont = false;
+            this.xrLabel14.StylePriority.UseTextAlignment = false;
+            this.xrLabel14.Text = "%.";
+            this.xrLabel14.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
             // xrLabel1
             // 
             this.xrLabel1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -296,7 +326,7 @@
             // 
             // lbTongSo
             // 
-            this.lbTongSo.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTongSo.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTongSo.LocationFloat = new DevExpress.Utils.PointFloat(228.1263F, 86.05558F);
             this.lbTongSo.Multiline = true;
             this.lbTongSo.Name = "lbTongSo";
@@ -309,7 +339,7 @@
             // 
             // lbCoMat
             // 
-            this.lbCoMat.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCoMat.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCoMat.LocationFloat = new DevExpress.Utils.PointFloat(228.1263F, 109.0555F);
             this.lbCoMat.Multiline = true;
             this.lbCoMat.Name = "lbCoMat";
@@ -322,7 +352,7 @@
             // 
             // lbVangMat
             // 
-            this.lbVangMat.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVangMat.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbVangMat.LocationFloat = new DevExpress.Utils.PointFloat(228.1263F, 132.0556F);
             this.lbVangMat.Multiline = true;
             this.lbVangMat.Name = "lbVangMat";
@@ -348,7 +378,7 @@
             // 
             // blSoCanBoDoan
             // 
-            this.blSoCanBoDoan.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.blSoCanBoDoan.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.blSoCanBoDoan.LocationFloat = new DevExpress.Utils.PointFloat(310.0036F, 201.0556F);
             this.blSoCanBoDoan.Multiline = true;
             this.blSoCanBoDoan.Name = "blSoCanBoDoan";
@@ -387,7 +417,7 @@
             // 
             // lbPTCanBoDoan
             // 
-            this.lbPTCanBoDoan.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPTCanBoDoan.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPTCanBoDoan.LocationFloat = new DevExpress.Utils.PointFloat(433.5399F, 201.0556F);
             this.lbPTCanBoDoan.Multiline = true;
             this.lbPTCanBoDoan.Name = "lbPTCanBoDoan";
@@ -400,7 +430,7 @@
             // 
             // lbPTCanBoDang
             // 
-            this.lbPTCanBoDang.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPTCanBoDang.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPTCanBoDang.LocationFloat = new DevExpress.Utils.PointFloat(433.5399F, 224.0556F);
             this.lbPTCanBoDang.Multiline = true;
             this.lbPTCanBoDang.Name = "lbPTCanBoDang";
@@ -426,7 +456,7 @@
             // 
             // lbSoCanBoDang
             // 
-            this.lbSoCanBoDang.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSoCanBoDang.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSoCanBoDang.LocationFloat = new DevExpress.Utils.PointFloat(310.0036F, 224.0556F);
             this.lbSoCanBoDang.Multiline = true;
             this.lbSoCanBoDang.Name = "lbSoCanBoDang";
@@ -491,7 +521,7 @@
             // 
             // lbSoDaiBieuNu
             // 
-            this.lbSoDaiBieuNu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSoDaiBieuNu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSoDaiBieuNu.LocationFloat = new DevExpress.Utils.PointFloat(200.0012F, 293.0557F);
             this.lbSoDaiBieuNu.Multiline = true;
             this.lbSoDaiBieuNu.Name = "lbSoDaiBieuNu";
@@ -517,7 +547,7 @@
             // 
             // lbPTDaiBieuNu
             // 
-            this.lbPTDaiBieuNu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPTDaiBieuNu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPTDaiBieuNu.LocationFloat = new DevExpress.Utils.PointFloat(327.4281F, 293.0557F);
             this.lbPTDaiBieuNu.Multiline = true;
             this.lbPTDaiBieuNu.Name = "lbPTDaiBieuNu";
@@ -556,7 +586,7 @@
             // 
             // lbPTDaiBieuNam
             // 
-            this.lbPTDaiBieuNam.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPTDaiBieuNam.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPTDaiBieuNam.LocationFloat = new DevExpress.Utils.PointFloat(327.4281F, 270.0556F);
             this.lbPTDaiBieuNam.Multiline = true;
             this.lbPTDaiBieuNam.Name = "lbPTDaiBieuNam";
@@ -595,7 +625,7 @@
             // 
             // lbSoDaiBieuNam
             // 
-            this.lbSoDaiBieuNam.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSoDaiBieuNam.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSoDaiBieuNam.LocationFloat = new DevExpress.Utils.PointFloat(200.0012F, 270.0556F);
             this.lbSoDaiBieuNam.Multiline = true;
             this.lbSoDaiBieuNam.Name = "lbSoDaiBieuNam";
@@ -608,7 +638,7 @@
             // 
             // lbTuoiCao
             // 
-            this.lbTuoiCao.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTuoiCao.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTuoiCao.LocationFloat = new DevExpress.Utils.PointFloat(303.1559F, 339.0558F);
             this.lbTuoiCao.Multiline = true;
             this.lbTuoiCao.Name = "lbTuoiCao";
@@ -686,7 +716,7 @@
             // 
             // lbTuoiTB
             // 
-            this.lbTuoiTB.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTuoiTB.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTuoiTB.LocationFloat = new DevExpress.Utils.PointFloat(311.9642F, 316.0558F);
             this.lbTuoiTB.Multiline = true;
             this.lbTuoiTB.Name = "lbTuoiTB";
@@ -725,7 +755,7 @@
             // 
             // lbTuoiThap
             // 
-            this.lbTuoiThap.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTuoiThap.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTuoiThap.LocationFloat = new DevExpress.Utils.PointFloat(303.1559F, 362.0558F);
             this.lbTuoiThap.Multiline = true;
             this.lbTuoiThap.Name = "lbTuoiThap";
@@ -751,7 +781,7 @@
             // 
             // lbPTDanToc
             // 
-            this.lbPTDanToc.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPTDanToc.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPTDanToc.LocationFloat = new DevExpress.Utils.PointFloat(311.9642F, 408.1421F);
             this.lbPTDanToc.Multiline = true;
             this.lbPTDanToc.Name = "lbPTDanToc";
@@ -777,7 +807,7 @@
             // 
             // lbDanToc
             // 
-            this.lbDanToc.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDanToc.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDanToc.LocationFloat = new DevExpress.Utils.PointFloat(200.0012F, 408.1422F);
             this.lbDanToc.Multiline = true;
             this.lbDanToc.Name = "lbDanToc";
@@ -816,8 +846,8 @@
             // 
             // lbPTDao
             // 
-            this.lbPTDao.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPTDao.LocationFloat = new DevExpress.Utils.PointFloat(345.4665F, 454.1422F);
+            this.lbPTDao.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPTDao.LocationFloat = new DevExpress.Utils.PointFloat(346.1469F, 454.1422F);
             this.lbPTDao.Multiline = true;
             this.lbPTDao.Name = "lbPTDao";
             this.lbPTDao.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -830,7 +860,7 @@
             // xrLabel41
             // 
             this.xrLabel41.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel41.LocationFloat = new DevExpress.Utils.PointFloat(392.0868F, 454.1422F);
+            this.xrLabel41.LocationFloat = new DevExpress.Utils.PointFloat(394.1887F, 454.1422F);
             this.xrLabel41.Multiline = true;
             this.xrLabel41.Name = "xrLabel41";
             this.xrLabel41.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -855,7 +885,7 @@
             // 
             // lbDao
             // 
-            this.lbDao.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDao.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDao.LocationFloat = new DevExpress.Utils.PointFloat(228.1262F, 454.1421F);
             this.lbDao.Multiline = true;
             this.lbDao.Name = "lbDao";
@@ -920,7 +950,7 @@
             // 
             // lbTrenDH
             // 
-            this.lbTrenDH.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTrenDH.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTrenDH.LocationFloat = new DevExpress.Utils.PointFloat(212.6042F, 500.1422F);
             this.lbTrenDH.Multiline = true;
             this.lbTrenDH.Name = "lbTrenDH";
@@ -959,7 +989,7 @@
             // 
             // lbPTTrenDH
             // 
-            this.lbPTTrenDH.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPTTrenDH.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPTTrenDH.LocationFloat = new DevExpress.Utils.PointFloat(382.5989F, 500.1421F);
             this.lbPTTrenDH.Multiline = true;
             this.lbPTTrenDH.Name = "lbPTTrenDH";
@@ -985,7 +1015,7 @@
             // 
             // lbPTDH
             // 
-            this.lbPTDH.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPTDH.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPTDH.LocationFloat = new DevExpress.Utils.PointFloat(395.316F, 523.1421F);
             this.lbPTDH.Multiline = true;
             this.lbPTDH.Name = "lbPTDH";
@@ -1011,7 +1041,7 @@
             // 
             // lbDH
             // 
-            this.lbDH.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDH.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDH.LocationFloat = new DevExpress.Utils.PointFloat(228.1262F, 523.1421F);
             this.lbDH.Multiline = true;
             this.lbDH.Name = "lbDH";
@@ -1050,7 +1080,7 @@
             // 
             // lbPTTrungCap
             // 
-            this.lbPTTrungCap.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPTTrungCap.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPTTrungCap.LocationFloat = new DevExpress.Utils.PointFloat(347.1095F, 546.1422F);
             this.lbPTTrungCap.Multiline = true;
             this.lbPTTrungCap.Name = "lbPTTrungCap";
@@ -1076,7 +1106,7 @@
             // 
             // lbTrungCap
             // 
-            this.lbTrungCap.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTrungCap.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTrungCap.LocationFloat = new DevExpress.Utils.PointFloat(181.9024F, 546.1421F);
             this.lbTrungCap.Multiline = true;
             this.lbTrungCap.Name = "lbTrungCap";
@@ -1115,7 +1145,7 @@
             // 
             // lbTHPT
             // 
-            this.lbTHPT.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTHPT.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTHPT.LocationFloat = new DevExpress.Utils.PointFloat(311.9642F, 569.1422F);
             this.lbTHPT.Multiline = true;
             this.lbTHPT.Name = "lbTHPT";
@@ -1193,7 +1223,7 @@
             // 
             // lbSoCap
             // 
-            this.lbSoCap.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSoCap.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSoCap.LocationFloat = new DevExpress.Utils.PointFloat(160.4563F, 661.1422F);
             this.lbSoCap.Multiline = true;
             this.lbSoCap.Name = "lbSoCap";
@@ -1219,7 +1249,7 @@
             // 
             // lbPTSoCap
             // 
-            this.lbPTSoCap.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPTSoCap.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPTSoCap.LocationFloat = new DevExpress.Utils.PointFloat(333.5439F, 661.1425F);
             this.lbPTSoCap.Multiline = true;
             this.lbPTSoCap.Name = "lbPTSoCap";
@@ -1258,7 +1288,7 @@
             // 
             // lbllTrungCap
             // 
-            this.lbllTrungCap.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbllTrungCap.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbllTrungCap.LocationFloat = new DevExpress.Utils.PointFloat(181.9024F, 638.1423F);
             this.lbllTrungCap.Multiline = true;
             this.lbllTrungCap.Name = "lbllTrungCap";
@@ -1284,7 +1314,7 @@
             // 
             // lbPTllTrungCap
             // 
-            this.lbPTllTrungCap.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPTllTrungCap.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPTllTrungCap.LocationFloat = new DevExpress.Utils.PointFloat(354.1674F, 638.1421F);
             this.lbPTllTrungCap.Multiline = true;
             this.lbPTllTrungCap.Name = "lbPTllTrungCap";
@@ -1310,8 +1340,8 @@
             // 
             // lbPTCaoCap
             // 
-            this.lbPTCaoCap.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPTCaoCap.LocationFloat = new DevExpress.Utils.PointFloat(347.1095F, 615.1424F);
+            this.lbPTCaoCap.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPTCaoCap.LocationFloat = new DevExpress.Utils.PointFloat(347.7899F, 615.142F);
             this.lbPTCaoCap.Multiline = true;
             this.lbPTCaoCap.Name = "lbPTCaoCap";
             this.lbPTCaoCap.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1324,7 +1354,7 @@
             // xrLabel71
             // 
             this.xrLabel71.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel71.LocationFloat = new DevExpress.Utils.PointFloat(392.0868F, 615.1424F);
+            this.xrLabel71.LocationFloat = new DevExpress.Utils.PointFloat(395.316F, 615.1424F);
             this.xrLabel71.Multiline = true;
             this.xrLabel71.Name = "xrLabel71";
             this.xrLabel71.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1349,7 +1379,7 @@
             // 
             // lbCaoCap
             // 
-            this.lbCaoCap.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCaoCap.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCaoCap.LocationFloat = new DevExpress.Utils.PointFloat(171.4518F, 615.1423F);
             this.lbCaoCap.Multiline = true;
             this.lbCaoCap.Name = "lbCaoCap";
@@ -1386,31 +1416,31 @@
             this.xrLabel67.Text = "f-Về trình độ lý luận chính trị:";
             this.xrLabel67.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
-            // lbPTTHPT
+            // xrLabel9
             // 
-            this.lbPTTHPT.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPTTHPT.LocationFloat = new DevExpress.Utils.PointFloat(480.6522F, 569.1422F);
-            this.lbPTTHPT.Multiline = true;
-            this.lbPTTHPT.Name = "lbPTTHPT";
-            this.lbPTTHPT.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.lbPTTHPT.SizeF = new System.Drawing.SizeF(35.32245F, 23F);
-            this.lbPTTHPT.StylePriority.UseFont = false;
-            this.lbPTTHPT.StylePriority.UseTextAlignment = false;
-            this.lbPTTHPT.Text = "0";
-            this.lbPTTHPT.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrLabel9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrLabel9.LocationFloat = new DevExpress.Utils.PointFloat(482.6293F, 201.0556F);
+            this.xrLabel9.Multiline = true;
+            this.xrLabel9.Name = "xrLabel9";
+            this.xrLabel9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel9.SizeF = new System.Drawing.SizeF(20.10541F, 23F);
+            this.xrLabel9.StylePriority.UseFont = false;
+            this.xrLabel9.StylePriority.UseTextAlignment = false;
+            this.xrLabel9.Text = "%.";
+            this.xrLabel9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
-            // xrLabel14
+            // xrLabel17
             // 
-            this.xrLabel14.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel14.LocationFloat = new DevExpress.Utils.PointFloat(515.9747F, 569.1422F);
-            this.xrLabel14.Multiline = true;
-            this.xrLabel14.Name = "xrLabel14";
-            this.xrLabel14.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel14.SizeF = new System.Drawing.SizeF(20.10541F, 23F);
-            this.xrLabel14.StylePriority.UseFont = false;
-            this.xrLabel14.StylePriority.UseTextAlignment = false;
-            this.xrLabel14.Text = "%.";
-            this.xrLabel14.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.xrLabel17.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrLabel17.LocationFloat = new DevExpress.Utils.PointFloat(482.6293F, 224.0556F);
+            this.xrLabel17.Multiline = true;
+            this.xrLabel17.Name = "xrLabel17";
+            this.xrLabel17.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel17.SizeF = new System.Drawing.SizeF(20.10541F, 23F);
+            this.xrLabel17.StylePriority.UseFont = false;
+            this.xrLabel17.StylePriority.UseTextAlignment = false;
+            this.xrLabel17.Text = "%.";
+            this.xrLabel17.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // rpTHONGKE
             // 
@@ -1520,5 +1550,7 @@
         private DevExpress.XtraReports.UI.XRLabel xrLabel67;
         private DevExpress.XtraReports.UI.XRLabel lbPTTHPT;
         private DevExpress.XtraReports.UI.XRLabel xrLabel14;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel17;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel9;
     }
 }
