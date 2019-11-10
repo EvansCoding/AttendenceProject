@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="HTDIEMDANH" Class="HTDIEMDANHDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=HTDIEMDANH;Integrated Security=True" SettingsObjectName="DTODLL.Properties.Settings" SettingsPropertyName="HTDIEMDANHConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.DAIHOI" Member="DAIHOIs">
+    <Type Name="DAIHOI">
+      <Column Name="MASODH" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CHUDE" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="NGAY" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TRANGTHAI" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="NGAYTAO" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="NGAYCAPNHAT" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="DAIHOI_THAMDUDAIHOI" Member="THAMDUDAIHOIs" ThisKey="MASODH" OtherKey="MASODH" Type="THAMDUDAIHOI" />
+    </Type>
+  </Table>
+  <Table Name="dbo.THAMDUDAIHOI" Member="THAMDUDAIHOIs">
+    <Type Name="THAMDUDAIHOI">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MASODV" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="MASODH" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="THOIGIANCOMAT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="DAIHOI_THAMDUDAIHOI" Member="DAIHOI" ThisKey="MASODH" OtherKey="MASODH" Type="DAIHOI" IsForeignKey="true" />
+      <Association Name="DOANVIEN_THAMDUDAIHOI" Member="DOANVIEN" ThisKey="MASODV" OtherKey="MASODV" Type="DOANVIEN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DOANVIEN" Member="DOANVIENs">
+    <Type Name="DOANVIEN">
+      <Column Name="MASODV" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CMND" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="HOLOT" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TEN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NAM" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="NAMSINH" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="NGUYENQUAN" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="DANTOC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TONGIAO" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CMNV" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="LLCT" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DONVI" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="NGAYVAODOAN" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="NGAYVAODANG" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="GHICHU" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="HASHING" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="NGAYTAO" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="NGAYCAPNHAT" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="DOANVIEN_THAMDUDAIHOI" Member="THAMDUDAIHOIs" ThisKey="MASODV" OtherKey="MASODV" Type="THAMDUDAIHOI" />
+    </Type>
+  </Table>
+</Database>

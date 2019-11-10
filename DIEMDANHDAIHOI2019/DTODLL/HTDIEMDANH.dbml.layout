@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 11.375" name="HTDIEMDANH">
+  <DataContextMoniker Name="/HTDIEMDANHDataContext" />
+  <nestedChildShapes>
+    <classShape Id="11c57abb-d804-4ac0-bfb0-f8cd3778a9b2" absoluteBounds="0.75, 0.875, 2, 1.9631982421875">
+      <DataClassMoniker Name="/HTDIEMDANHDataContext/DAIHOI" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7455dad6-e1ef-4706-8493-14fd18a8a17a" absoluteBounds="0.765, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="35f84652-522b-4620-8cf9-f4a59123137e" absoluteBounds="3.5, 1.125, 2, 1.5785953776041664">
+      <DataClassMoniker Name="/HTDIEMDANHDataContext/THAMDUDAIHOI" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a197dca0-4b65-4fe4-a3ec-605e68a3a74b" absoluteBounds="3.515, 1.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0fa98772-d4f9-4e47-a92e-401def2c7458" absoluteBounds="0.75, 6.875, 2, 4.2708154296874987">
+      <DataClassMoniker Name="/HTDIEMDANHDataContext/DOANVIEN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="53ab8606-1277-4c6f-8ea9-50b0a7e63c80" absoluteBounds="0.765, 7.335, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.91429768880208); (3.5 : 1.91429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HTDIEMDANHDataContext/DAIHOI/DAIHOI_THAMDUDAIHOI" />
+      <nodes>
+        <classShapeMoniker Id="11c57abb-d804-4ac0-bfb0-f8cd3778a9b2" />
+        <classShapeMoniker Id="35f84652-522b-4620-8cf9-f4a59123137e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 9.01040771484375); (4.5 : 9.01040771484375); (4.5 : 2.70359537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HTDIEMDANHDataContext/DOANVIEN/DOANVIEN_THAMDUDAIHOI" />
+      <nodes>
+        <classShapeMoniker Id="0fa98772-d4f9-4e47-a92e-401def2c7458" />
+        <classShapeMoniker Id="35f84652-522b-4620-8cf9-f4a59123137e" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
