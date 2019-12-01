@@ -29,17 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraLayout.ColumnDefinition columnDefinition25 = new DevExpress.XtraLayout.ColumnDefinition();
-            DevExpress.XtraLayout.ColumnDefinition columnDefinition26 = new DevExpress.XtraLayout.ColumnDefinition();
-            DevExpress.XtraLayout.ColumnDefinition columnDefinition27 = new DevExpress.XtraLayout.ColumnDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition49 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition50 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition51 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition52 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition53 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition54 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition1 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition2 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition3 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition1 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition2 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition3 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition4 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition5 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition6 = new DevExpress.XtraLayout.RowDefinition();
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbTEN = new DevExpress.XtraEditors.LabelControl();
             this.panel1 = new System.Windows.Forms.Panel();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
@@ -68,10 +67,10 @@
             this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ptMain = new System.Windows.Forms.PictureBox();
             this.flpAllUser = new System.Windows.Forms.FlowLayoutPanel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.ptMain = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
@@ -89,22 +88,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptMain)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // defaultLookAndFeel1
             // 
             this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2016 Colorful";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::DIEMDANHDAIHOI2019.Properties.Resources.backgroundfixed;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1364, 736);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // lbTEN
             // 
@@ -114,11 +103,15 @@
             this.lbTEN.Appearance.Options.UseBackColor = true;
             this.lbTEN.Appearance.Options.UseFont = true;
             this.lbTEN.Appearance.Options.UseForeColor = true;
-            this.lbTEN.Location = new System.Drawing.Point(544, 193);
+            this.lbTEN.Appearance.Options.UseTextOptions = true;
+            this.lbTEN.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lbTEN.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Vertical;
+            this.lbTEN.Location = new System.Drawing.Point(200, 201);
             this.lbTEN.Name = "lbTEN";
-            this.lbTEN.Size = new System.Drawing.Size(431, 59);
+            this.lbTEN.Size = new System.Drawing.Size(964, 59);
             this.lbTEN.TabIndex = 1;
             this.lbTEN.Text = "NGUYỄN TUẤN KIỆT";
+            this.lbTEN.Click += new System.EventHandler(this.lbTEN_Click);
             // 
             // panel1
             // 
@@ -126,7 +119,7 @@
             this.panel1.Controls.Add(this.layoutControl1);
             this.panel1.Controls.Add(this.ptMain);
             this.panel1.ForeColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(237, 265);
+            this.panel1.Location = new System.Drawing.Point(302, 266);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(952, 302);
             this.panel1.TabIndex = 4;
@@ -157,7 +150,7 @@
             // 
             this.lbDONVI.AllowDrop = true;
             this.lbDONVI.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDONVI.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.lbDONVI.Appearance.ForeColor = System.Drawing.Color.White;
             this.lbDONVI.Appearance.Options.UseFont = true;
             this.lbDONVI.Appearance.Options.UseForeColor = true;
             this.lbDONVI.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Vertical;
@@ -171,7 +164,7 @@
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Appearance.Options.UseForeColor = true;
             this.labelControl2.Location = new System.Drawing.Point(32, 237);
@@ -185,7 +178,7 @@
             // 
             this.lbCHUYENMON.AllowDrop = true;
             this.lbCHUYENMON.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCHUYENMON.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.lbCHUYENMON.Appearance.ForeColor = System.Drawing.Color.White;
             this.lbCHUYENMON.Appearance.Options.UseFont = true;
             this.lbCHUYENMON.Appearance.Options.UseForeColor = true;
             this.lbCHUYENMON.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Vertical;
@@ -199,7 +192,7 @@
             // labelControl9
             // 
             this.labelControl9.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl9.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl9.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl9.Appearance.Options.UseFont = true;
             this.labelControl9.Appearance.Options.UseForeColor = true;
             this.labelControl9.Location = new System.Drawing.Point(32, 192);
@@ -212,7 +205,7 @@
             // lbTONGIAO
             // 
             this.lbTONGIAO.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTONGIAO.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.lbTONGIAO.Appearance.ForeColor = System.Drawing.Color.White;
             this.lbTONGIAO.Appearance.Options.UseFont = true;
             this.lbTONGIAO.Appearance.Options.UseForeColor = true;
             this.lbTONGIAO.Location = new System.Drawing.Point(222, 147);
@@ -225,7 +218,7 @@
             // labelControl7
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl7.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl7.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl7.Appearance.Options.UseFont = true;
             this.labelControl7.Appearance.Options.UseForeColor = true;
             this.labelControl7.Location = new System.Drawing.Point(32, 147);
@@ -238,7 +231,7 @@
             // lbDANTOC
             // 
             this.lbDANTOC.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDANTOC.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.lbDANTOC.Appearance.ForeColor = System.Drawing.Color.White;
             this.lbDANTOC.Appearance.Options.UseFont = true;
             this.lbDANTOC.Appearance.Options.UseForeColor = true;
             this.lbDANTOC.Location = new System.Drawing.Point(222, 102);
@@ -251,7 +244,7 @@
             // labelControl5
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl5.Appearance.Options.UseFont = true;
             this.labelControl5.Appearance.Options.UseForeColor = true;
             this.labelControl5.Location = new System.Drawing.Point(32, 102);
@@ -264,7 +257,7 @@
             // lbNGUYENQUAN
             // 
             this.lbNGUYENQUAN.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNGUYENQUAN.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.lbNGUYENQUAN.Appearance.ForeColor = System.Drawing.Color.White;
             this.lbNGUYENQUAN.Appearance.Options.UseFont = true;
             this.lbNGUYENQUAN.Appearance.Options.UseForeColor = true;
             this.lbNGUYENQUAN.Location = new System.Drawing.Point(222, 57);
@@ -277,7 +270,7 @@
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Appearance.Options.UseForeColor = true;
             this.labelControl3.Location = new System.Drawing.Point(32, 57);
@@ -290,7 +283,7 @@
             // lbGIOITINH
             // 
             this.lbGIOITINH.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbGIOITINH.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.lbGIOITINH.Appearance.ForeColor = System.Drawing.Color.White;
             this.lbGIOITINH.Appearance.Options.UseFont = true;
             this.lbGIOITINH.Appearance.Options.UseForeColor = true;
             this.lbGIOITINH.Location = new System.Drawing.Point(222, 12);
@@ -303,7 +296,7 @@
             // labelControl4
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl4.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl4.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.Appearance.Options.UseForeColor = true;
             this.labelControl4.Location = new System.Drawing.Point(32, 12);
@@ -334,35 +327,35 @@
             this.layoutControlItem12});
             this.Root.LayoutMode = DevExpress.XtraLayout.Utils.LayoutMode.Table;
             this.Root.Name = "Root";
-            columnDefinition25.SizeType = System.Windows.Forms.SizeType.Absolute;
-            columnDefinition25.Width = 20D;
-            columnDefinition26.SizeType = System.Windows.Forms.SizeType.Absolute;
-            columnDefinition26.Width = 190D;
-            columnDefinition27.SizeType = System.Windows.Forms.SizeType.AutoSize;
-            columnDefinition27.Width = 442D;
+            columnDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition1.Width = 20D;
+            columnDefinition2.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition2.Width = 190D;
+            columnDefinition3.SizeType = System.Windows.Forms.SizeType.AutoSize;
+            columnDefinition3.Width = 442D;
             this.Root.OptionsTableLayoutGroup.ColumnDefinitions.AddRange(new DevExpress.XtraLayout.ColumnDefinition[] {
-            columnDefinition25,
-            columnDefinition26,
-            columnDefinition27});
-            rowDefinition49.Height = 45D;
-            rowDefinition49.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition50.Height = 45D;
-            rowDefinition50.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition51.Height = 45D;
-            rowDefinition51.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition52.Height = 45D;
-            rowDefinition52.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition53.Height = 45D;
-            rowDefinition53.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition54.Height = 57D;
-            rowDefinition54.SizeType = System.Windows.Forms.SizeType.AutoSize;
+            columnDefinition1,
+            columnDefinition2,
+            columnDefinition3});
+            rowDefinition1.Height = 45D;
+            rowDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition2.Height = 45D;
+            rowDefinition2.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition3.Height = 45D;
+            rowDefinition3.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition4.Height = 45D;
+            rowDefinition4.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition5.Height = 45D;
+            rowDefinition5.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition6.Height = 57D;
+            rowDefinition6.SizeType = System.Windows.Forms.SizeType.AutoSize;
             this.Root.OptionsTableLayoutGroup.RowDefinitions.AddRange(new DevExpress.XtraLayout.RowDefinition[] {
-            rowDefinition49,
-            rowDefinition50,
-            rowDefinition51,
-            rowDefinition52,
-            rowDefinition53,
-            rowDefinition54});
+            rowDefinition1,
+            rowDefinition2,
+            rowDefinition3,
+            rowDefinition4,
+            rowDefinition5,
+            rowDefinition6});
             this.Root.Size = new System.Drawing.Size(672, 302);
             this.Root.TextVisible = false;
             // 
@@ -501,6 +494,20 @@
             this.layoutControlItem12.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem12.TextVisible = false;
             // 
+            // flpAllUser
+            // 
+            this.flpAllUser.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.flpAllUser.BackColor = System.Drawing.Color.White;
+            this.flpAllUser.ForeColor = System.Drawing.Color.White;
+            this.flpAllUser.Location = new System.Drawing.Point(186, 546);
+            this.flpAllUser.Name = "flpAllUser";
+            this.flpAllUser.Size = new System.Drawing.Size(991, 189);
+            this.flpAllUser.TabIndex = 5;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // ptMain
             // 
             this.ptMain.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -513,19 +520,16 @@
             this.ptMain.TabIndex = 0;
             this.ptMain.TabStop = false;
             // 
-            // flpAllUser
+            // pictureBox1
             // 
-            this.flpAllUser.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.flpAllUser.BackColor = System.Drawing.Color.White;
-            this.flpAllUser.ForeColor = System.Drawing.Color.White;
-            this.flpAllUser.Location = new System.Drawing.Point(272, 546);
-            this.flpAllUser.Name = "flpAllUser";
-            this.flpAllUser.Size = new System.Drawing.Size(800, 189);
-            this.flpAllUser.TabIndex = 5;
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::DIEMDANHDAIHOI2019.Properties.Resources.Phong_checkin_Dai_bieu;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1364, 736);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // fTHONGTIN1366X768
             // 
@@ -541,10 +545,10 @@
             this.Text = "fTHONGTIN1366X768";
             this.Load += new System.EventHandler(this.fTHONGTIN1366X768_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.fTHONGTIN1366X768_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
+            this.layoutControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
@@ -559,8 +563,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptMain)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

@@ -36,21 +36,21 @@
             // label1
             // 
             this.label1.AllowDrop = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(-1, 159);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(0, 192);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(197, 43);
+            this.label1.Size = new System.Drawing.Size(329, 64);
             this.label1.TabIndex = 1;
-            this.label1.Text = "NGUYỄN TUẤN KIỆT";
+            this.label1.Text = "NGUYỄN TUẤN KIỆT daf asf ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Location = new System.Drawing.Point(28, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(80, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(142, 153);
+            this.pictureBox1.Size = new System.Drawing.Size(170, 186);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -64,7 +64,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "US_ShortInfo1920x1080";
-            this.Size = new System.Drawing.Size(196, 202);
+            this.Size = new System.Drawing.Size(329, 256);
+            this.Load += new System.EventHandler(this.US_ShortInfo1920x1080_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

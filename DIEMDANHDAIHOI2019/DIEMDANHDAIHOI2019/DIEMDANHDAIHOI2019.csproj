@@ -202,6 +202,7 @@
       <DependentUpon>rpTHONGKE.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
+    <None Include="app.manifest" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -227,9 +228,14 @@
     <None Include="Resources\background.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\bipwav.wav" />
+    <None Include="Resources\bip.mp3" />
+    <None Include="Resources\Annotation 2019-11-27 152115.png" />
+    <None Include="Resources\Annotation 2019-11-27 152621ASDFAS.png" />
     <Content Include="Resources\background-black-background-blur-1391293.jpg" />
     <Content Include="Resources\background1.png" />
     <Content Include="Resources\backgroundfixed.png" />
+    <None Include="Resources\Phong checkin Dai bieu.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

@@ -13,7 +13,7 @@
             xrLabel2.DataBindings.Add("Text", DataSource, "colDONVI");
             xrPictureBox2.DataBindings.Add("Image", DataSource, "colPIC");
             xrPictureBox3.DataBindings.Add("Image", DataSource, "colQRDB");
-            xrPictureBox4.DataBindings.Add("Image", DataSource, "colQRVK");
+            //xrPictureBox4.DataBindings.Add("Image", DataSource, "colQRVK");
         }
     }
 }

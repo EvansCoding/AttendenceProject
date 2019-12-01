@@ -130,4 +130,19 @@
   <data name="background_black_background_blur_1391293" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\background-black-background-blur-1391293.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Phong_checkin_Dai_bieu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Phong checkin Dai bieu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Annotation_2019_11_27_152115" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Annotation 2019-11-27 152115.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Annotation_2019_11_27_152621ASDFAS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Annotation 2019-11-27 152621ASDFAS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bip.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bipwav" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bipwav.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

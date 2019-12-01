@@ -31,6 +31,13 @@
 
         private void fTHONGTIN1366X768_Load(object sender, EventArgs e)
         {
+            lbTEN.Parent = pictureBox1;
+            lbTEN.BackColor = System.Drawing.Color.Transparent;
+            panel1.Parent = pictureBox1;
+            panel1.BackColor = System.Drawing.Color.Transparent;
+            flpAllUser.Parent = pictureBox1;
+            flpAllUser.BackColor = System.Drawing.Color.Transparent;
+
             try
             {
                 dvl = thamDuDaiHoiDTO.Instance.dvTake5(_maDH);
@@ -66,11 +73,11 @@
             lbTEN.Text = dv.HOLOT.ToUpper() + " " + dv.TEN.ToUpper();
             ptMain.Image = Image.FromFile(Application.StartupPath + "\\Images\\" + dv.CMND + ".jpg");
             lbGIOITINH.Text = dv.NAM == true ? "Nam" : "Nữ";
-            lbNGUYENQUAN.Text = dv.NGUYENQUAN == "" ? "Không Có" : toTitleCase(dv.NGUYENQUAN);
-            lbDANTOC.Text = dv.DANTOC == "" ? "Không Có" : toTitleCase(dv.DANTOC);
-            lbTONGIAO.Text = dv.TONGIAO == "" ? "Không Có" : toTitleCase(dv.TONGIAO);
-            lbCHUYENMON.Text = dv.CMNV == "" ? "Không Có" : toTitleCase(dv.CMNV);
-            lbDONVI.Text = dv.DONVI == "" ? "Không Có" : toTitleCase(dv.DONVI);
+            lbNGUYENQUAN.Text = dv.NGUYENQUAN == "" ? "Không" : toTitleCase(dv.NGUYENQUAN);
+            lbDANTOC.Text = dv.DANTOC == "" ? "Không" : toTitleCase(dv.DANTOC);
+            lbTONGIAO.Text = dv.TONGIAO == "" ? "Không" : toTitleCase(dv.TONGIAO);
+            lbCHUYENMON.Text = dv.CMNV == "" ? "Không" : toTitleCase(dv.CMNV);
+            lbDONVI.Text = dv.DONVI == "" ? "Không" : toTitleCase(dv.DONVI);
         }
 
         public string toTitleCase(string _str)
@@ -140,6 +147,11 @@
                     check = true;
                 }
             }
+        }
+
+        private void lbTEN_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

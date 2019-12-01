@@ -151,7 +151,10 @@
             if (dialogResult == DialogResult.OK)
             {
                 if (Entities.Instance.deleteAll())
+                {
                     MessageBox.Show("XÓA THÀNH CÔNG!", "THÔNG BÁO!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
                 else MessageBox.Show("XÓA KHÔNG THÀNH CÔNG!", "LỖI", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             refresh();

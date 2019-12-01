@@ -40,7 +40,6 @@
             DevExpress.XtraLayout.RowDefinition rowDefinition6 = new DevExpress.XtraLayout.RowDefinition();
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.lbTEN = new System.Windows.Forms.Label();
-            this.flpAllUser = new System.Windows.Forms.FlowLayoutPanel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
@@ -70,6 +69,7 @@
             this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             this.ptMain = new System.Windows.Forms.PictureBox();
+            this.flpAllUser = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
@@ -97,25 +97,15 @@
             // 
             // lbTEN
             // 
-            this.lbTEN.AutoSize = true;
-            this.lbTEN.BackColor = System.Drawing.Color.White;
+            this.lbTEN.BackColor = System.Drawing.Color.Transparent;
             this.lbTEN.Font = new System.Drawing.Font("Segoe UI Black", 44.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTEN.ForeColor = System.Drawing.Color.Red;
-            this.lbTEN.Location = new System.Drawing.Point(786, 284);
+            this.lbTEN.Location = new System.Drawing.Point(290, 311);
             this.lbTEN.Name = "lbTEN";
-            this.lbTEN.Size = new System.Drawing.Size(626, 78);
+            this.lbTEN.Size = new System.Drawing.Size(1353, 78);
             this.lbTEN.TabIndex = 1;
             this.lbTEN.Text = "NGUYỄN TUẤN KIỆT";
-            // 
-            // flpAllUser
-            // 
-            this.flpAllUser.BackColor = System.Drawing.Color.White;
-            this.flpAllUser.Font = new System.Drawing.Font("Segoe UI Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.flpAllUser.ForeColor = System.Drawing.Color.Red;
-            this.flpAllUser.Location = new System.Drawing.Point(447, 766);
-            this.flpAllUser.Name = "flpAllUser";
-            this.flpAllUser.Size = new System.Drawing.Size(1017, 202);
-            this.flpAllUser.TabIndex = 3;
+            this.lbTEN.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // timer1
             // 
@@ -126,9 +116,9 @@
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.layoutControl1);
             this.panel1.Controls.Add(this.ptMain);
-            this.panel1.Location = new System.Drawing.Point(447, 377);
+            this.panel1.Location = new System.Drawing.Point(393, 416);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1138, 380);
+            this.panel1.Size = new System.Drawing.Size(1110, 380);
             this.panel1.TabIndex = 4;
             // 
             // layoutControl1
@@ -146,17 +136,17 @@
             this.layoutControl1.Controls.Add(this.lbGIOITINH);
             this.layoutControl1.Controls.Add(this.labelControl1);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl1.Location = new System.Drawing.Point(322, 0);
+            this.layoutControl1.Location = new System.Drawing.Point(330, 0);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(816, 380);
+            this.layoutControl1.Size = new System.Drawing.Size(780, 380);
             this.layoutControl1.TabIndex = 1;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // lbCHUYENMON
             // 
             this.lbCHUYENMON.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCHUYENMON.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.lbCHUYENMON.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.lbCHUYENMON.Appearance.Options.UseFont = true;
             this.lbCHUYENMON.Appearance.Options.UseForeColor = true;
             this.lbCHUYENMON.Location = new System.Drawing.Point(272, 232);
@@ -169,7 +159,7 @@
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Appearance.Options.UseForeColor = true;
             this.labelControl2.Location = new System.Drawing.Point(32, 232);
@@ -182,7 +172,7 @@
             // lbDONVI
             // 
             this.lbDONVI.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDONVI.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.lbDONVI.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.lbDONVI.Appearance.Options.UseFont = true;
             this.lbDONVI.Appearance.Options.UseForeColor = true;
             this.lbDONVI.Location = new System.Drawing.Point(272, 287);
@@ -195,7 +185,7 @@
             // lbTONGIAO
             // 
             this.lbTONGIAO.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTONGIAO.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.lbTONGIAO.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.lbTONGIAO.Appearance.Options.UseFont = true;
             this.lbTONGIAO.Appearance.Options.UseForeColor = true;
             this.lbTONGIAO.Location = new System.Drawing.Point(272, 177);
@@ -208,7 +198,7 @@
             // lbDANTOC
             // 
             this.lbDANTOC.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDANTOC.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.lbDANTOC.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.lbDANTOC.Appearance.Options.UseFont = true;
             this.lbDANTOC.Appearance.Options.UseForeColor = true;
             this.lbDANTOC.Location = new System.Drawing.Point(272, 122);
@@ -221,7 +211,7 @@
             // lbNGUYENQUAN
             // 
             this.lbNGUYENQUAN.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNGUYENQUAN.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.lbNGUYENQUAN.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.lbNGUYENQUAN.Appearance.Options.UseFont = true;
             this.lbNGUYENQUAN.Appearance.Options.UseForeColor = true;
             this.lbNGUYENQUAN.Location = new System.Drawing.Point(272, 67);
@@ -234,7 +224,7 @@
             // lbDONVI1
             // 
             this.lbDONVI1.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDONVI1.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.lbDONVI1.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.lbDONVI1.Appearance.Options.UseFont = true;
             this.lbDONVI1.Appearance.Options.UseForeColor = true;
             this.lbDONVI1.Location = new System.Drawing.Point(32, 287);
@@ -247,7 +237,7 @@
             // labelControl5
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.labelControl5.Appearance.Options.UseFont = true;
             this.labelControl5.Appearance.Options.UseForeColor = true;
             this.labelControl5.Location = new System.Drawing.Point(32, 177);
@@ -260,7 +250,7 @@
             // labelControl4
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl4.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl4.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.Appearance.Options.UseForeColor = true;
             this.labelControl4.Location = new System.Drawing.Point(32, 122);
@@ -273,7 +263,7 @@
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Appearance.Options.UseForeColor = true;
             this.labelControl3.Location = new System.Drawing.Point(32, 67);
@@ -286,7 +276,7 @@
             // lbGIOITINH
             // 
             this.lbGIOITINH.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbGIOITINH.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.lbGIOITINH.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.lbGIOITINH.Appearance.Options.UseFont = true;
             this.lbGIOITINH.Appearance.Options.UseForeColor = true;
             this.lbGIOITINH.Location = new System.Drawing.Point(272, 12);
@@ -299,7 +289,7 @@
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Appearance.Options.UseForeColor = true;
             this.labelControl1.Location = new System.Drawing.Point(32, 12);
@@ -311,6 +301,8 @@
             // 
             // Root
             // 
+            this.Root.AppearanceGroup.BackColor = System.Drawing.Color.Transparent;
+            this.Root.AppearanceGroup.Options.UseBackColor = true;
             this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.Root.GroupBordersVisible = false;
             this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
@@ -357,7 +349,7 @@
             rowDefinition4,
             rowDefinition5,
             rowDefinition6});
-            this.Root.Size = new System.Drawing.Size(816, 380);
+            this.Root.Size = new System.Drawing.Size(780, 380);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem1
@@ -376,7 +368,7 @@
             this.layoutControlItem2.Location = new System.Drawing.Point(260, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.OptionsTableLayoutItem.ColumnIndex = 2;
-            this.layoutControlItem2.Size = new System.Drawing.Size(536, 55);
+            this.layoutControlItem2.Size = new System.Drawing.Size(500, 55);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
@@ -431,7 +423,7 @@
             this.layoutControlItem7.Name = "layoutControlItem7";
             this.layoutControlItem7.OptionsTableLayoutItem.ColumnIndex = 2;
             this.layoutControlItem7.OptionsTableLayoutItem.RowIndex = 1;
-            this.layoutControlItem7.Size = new System.Drawing.Size(536, 55);
+            this.layoutControlItem7.Size = new System.Drawing.Size(500, 55);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
@@ -442,7 +434,7 @@
             this.layoutControlItem8.Name = "layoutControlItem8";
             this.layoutControlItem8.OptionsTableLayoutItem.ColumnIndex = 2;
             this.layoutControlItem8.OptionsTableLayoutItem.RowIndex = 2;
-            this.layoutControlItem8.Size = new System.Drawing.Size(536, 55);
+            this.layoutControlItem8.Size = new System.Drawing.Size(500, 55);
             this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem8.TextVisible = false;
             // 
@@ -453,7 +445,7 @@
             this.layoutControlItem9.Name = "layoutControlItem9";
             this.layoutControlItem9.OptionsTableLayoutItem.ColumnIndex = 2;
             this.layoutControlItem9.OptionsTableLayoutItem.RowIndex = 3;
-            this.layoutControlItem9.Size = new System.Drawing.Size(536, 55);
+            this.layoutControlItem9.Size = new System.Drawing.Size(500, 55);
             this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem9.TextVisible = false;
             // 
@@ -464,7 +456,7 @@
             this.layoutControlItem10.Name = "layoutControlItem10";
             this.layoutControlItem10.OptionsTableLayoutItem.ColumnIndex = 2;
             this.layoutControlItem10.OptionsTableLayoutItem.RowIndex = 5;
-            this.layoutControlItem10.Size = new System.Drawing.Size(536, 85);
+            this.layoutControlItem10.Size = new System.Drawing.Size(500, 85);
             this.layoutControlItem10.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem10.TextVisible = false;
             // 
@@ -486,7 +478,7 @@
             this.layoutControlItem12.Name = "layoutControlItem12";
             this.layoutControlItem12.OptionsTableLayoutItem.ColumnIndex = 2;
             this.layoutControlItem12.OptionsTableLayoutItem.RowIndex = 4;
-            this.layoutControlItem12.Size = new System.Drawing.Size(536, 55);
+            this.layoutControlItem12.Size = new System.Drawing.Size(500, 55);
             this.layoutControlItem12.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem12.TextVisible = false;
             // 
@@ -496,15 +488,27 @@
             this.ptMain.Dock = System.Windows.Forms.DockStyle.Left;
             this.ptMain.Location = new System.Drawing.Point(0, 0);
             this.ptMain.Name = "ptMain";
-            this.ptMain.Size = new System.Drawing.Size(322, 380);
+            this.ptMain.Size = new System.Drawing.Size(330, 380);
             this.ptMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptMain.TabIndex = 0;
             this.ptMain.TabStop = false;
             // 
+            // flpAllUser
+            // 
+            this.flpAllUser.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.flpAllUser.BackColor = System.Drawing.Color.White;
+            this.flpAllUser.BackgroundImage = global::DIEMDANHDAIHOI2019.Properties.Resources.Annotation_2019_11_27_152621ASDFAS;
+            this.flpAllUser.Font = new System.Drawing.Font("Segoe UI Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.flpAllUser.ForeColor = System.Drawing.Color.Red;
+            this.flpAllUser.Location = new System.Drawing.Point(121, 792);
+            this.flpAllUser.Name = "flpAllUser";
+            this.flpAllUser.Size = new System.Drawing.Size(1675, 256);
+            this.flpAllUser.TabIndex = 3;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::DIEMDANHDAIHOI2019.Properties.Resources.backgroundfixed;
+            this.pictureBox1.Image = global::DIEMDANHDAIHOI2019.Properties.Resources.Phong_checkin_Dai_bieu;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1918, 1048);
@@ -547,7 +551,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptMain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

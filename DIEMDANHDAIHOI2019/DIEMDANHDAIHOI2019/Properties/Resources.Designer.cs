@@ -63,6 +63,26 @@ namespace DIEMDANHDAIHOI2019.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Annotation_2019_11_27_152115 {
+            get {
+                object obj = ResourceManager.GetObject("Annotation_2019_11_27_152115", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Annotation_2019_11_27_152621ASDFAS {
+            get {
+                object obj = ResourceManager.GetObject("Annotation_2019_11_27_152621ASDFAS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap background {
             get {
                 object obj = ResourceManager.GetObject("background", resourceCulture);
@@ -96,6 +116,35 @@ namespace DIEMDANHDAIHOI2019.Properties {
         internal static System.Drawing.Bitmap backgroundfixed {
             get {
                 object obj = ResourceManager.GetObject("backgroundfixed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] bip {
+            get {
+                object obj = ResourceManager.GetObject("bip", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream bipwav {
+            get {
+                return ResourceManager.GetStream("bipwav", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Phong_checkin_Dai_bieu {
+            get {
+                object obj = ResourceManager.GetObject("Phong_checkin_Dai_bieu", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

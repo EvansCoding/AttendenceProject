@@ -15,6 +15,10 @@
 
         public void load()
         {
+
+            lbCHUDE.Text = daiHoiDTO.Instance.gyByChuDe(_maDH);
+            lbNGAY.Text = daiHoiDTO.Instance.getByNGAYDH(_maDH).Value.ToShortDateString().ToString();
+
             object[] oj = thamDuDaiHoiDTO.Instance.soLuongDaiBieu(_maDH);
 
             lbTongSo.Text = oj[0].ToString();

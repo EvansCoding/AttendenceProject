@@ -41,7 +41,6 @@
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.lbDONVI = new DevExpress.XtraEditors.LabelControl();
@@ -75,7 +74,7 @@
             this.btnConnectCamera = new System.Windows.Forms.Button();
             this.tbIPCam = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
@@ -94,6 +93,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptMain)).BeginInit();
             this.pnlIPCam.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // defaultLookAndFeel1
@@ -109,24 +109,13 @@
             this.timer2.Interval = 500;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::DIEMDANHDAIHOI2019.Properties.Resources.backgroundfixed;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1364, 736);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.layoutControl1);
             this.panel1.Controls.Add(this.ptMain);
             this.panel1.ForeColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(258, 280);
+            this.panel1.Location = new System.Drawing.Point(208, 316);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(946, 312);
             this.panel1.TabIndex = 3;
@@ -157,7 +146,7 @@
             // 
             this.lbDONVI.AllowDrop = true;
             this.lbDONVI.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDONVI.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.lbDONVI.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.lbDONVI.Appearance.Options.UseFont = true;
             this.lbDONVI.Appearance.Options.UseForeColor = true;
             this.lbDONVI.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Vertical;
@@ -171,7 +160,7 @@
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Appearance.Options.UseForeColor = true;
             this.labelControl2.Location = new System.Drawing.Point(32, 237);
@@ -185,7 +174,7 @@
             // 
             this.lbCHUYENMON.AllowDrop = true;
             this.lbCHUYENMON.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCHUYENMON.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.lbCHUYENMON.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.lbCHUYENMON.Appearance.Options.UseFont = true;
             this.lbCHUYENMON.Appearance.Options.UseForeColor = true;
             this.lbCHUYENMON.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Vertical;
@@ -199,7 +188,7 @@
             // labelControl9
             // 
             this.labelControl9.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl9.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl9.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.labelControl9.Appearance.Options.UseFont = true;
             this.labelControl9.Appearance.Options.UseForeColor = true;
             this.labelControl9.Location = new System.Drawing.Point(32, 192);
@@ -212,7 +201,7 @@
             // lbTONGIAO
             // 
             this.lbTONGIAO.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTONGIAO.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.lbTONGIAO.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.lbTONGIAO.Appearance.Options.UseFont = true;
             this.lbTONGIAO.Appearance.Options.UseForeColor = true;
             this.lbTONGIAO.Location = new System.Drawing.Point(222, 147);
@@ -225,7 +214,7 @@
             // labelControl7
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl7.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl7.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.labelControl7.Appearance.Options.UseFont = true;
             this.labelControl7.Appearance.Options.UseForeColor = true;
             this.labelControl7.Location = new System.Drawing.Point(32, 147);
@@ -238,7 +227,7 @@
             // lbDANTOC
             // 
             this.lbDANTOC.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDANTOC.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.lbDANTOC.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.lbDANTOC.Appearance.Options.UseFont = true;
             this.lbDANTOC.Appearance.Options.UseForeColor = true;
             this.lbDANTOC.Location = new System.Drawing.Point(222, 102);
@@ -251,7 +240,7 @@
             // labelControl5
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.labelControl5.Appearance.Options.UseFont = true;
             this.labelControl5.Appearance.Options.UseForeColor = true;
             this.labelControl5.Location = new System.Drawing.Point(32, 102);
@@ -264,7 +253,7 @@
             // lbNGUYENQUAN
             // 
             this.lbNGUYENQUAN.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNGUYENQUAN.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.lbNGUYENQUAN.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.lbNGUYENQUAN.Appearance.Options.UseFont = true;
             this.lbNGUYENQUAN.Appearance.Options.UseForeColor = true;
             this.lbNGUYENQUAN.Location = new System.Drawing.Point(222, 57);
@@ -277,7 +266,7 @@
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Appearance.Options.UseForeColor = true;
             this.labelControl3.Location = new System.Drawing.Point(32, 57);
@@ -290,7 +279,7 @@
             // lbGIOITINH
             // 
             this.lbGIOITINH.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbGIOITINH.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.lbGIOITINH.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.lbGIOITINH.Appearance.Options.UseFont = true;
             this.lbGIOITINH.Appearance.Options.UseForeColor = true;
             this.lbGIOITINH.Location = new System.Drawing.Point(222, 12);
@@ -303,7 +292,7 @@
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Appearance.Options.UseForeColor = true;
             this.labelControl1.Location = new System.Drawing.Point(32, 12);
@@ -515,15 +504,15 @@
             // 
             // lbTEN
             // 
-            this.lbTEN.AutoSize = true;
             this.lbTEN.BackColor = System.Drawing.Color.White;
             this.lbTEN.Font = new System.Drawing.Font("Segoe UI Black", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTEN.ForeColor = System.Drawing.Color.Red;
-            this.lbTEN.Location = new System.Drawing.Point(557, 198);
+            this.lbTEN.Location = new System.Drawing.Point(218, 228);
             this.lbTEN.Name = "lbTEN";
-            this.lbTEN.Size = new System.Drawing.Size(456, 59);
+            this.lbTEN.Size = new System.Drawing.Size(936, 59);
             this.lbTEN.TabIndex = 5;
             this.lbTEN.Text = "NGUYỄN TUẤN KIỆT";
+            this.lbTEN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlIPCam
             // 
@@ -566,6 +555,17 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Địa chỉ IP Camera:";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::DIEMDANHDAIHOI2019.Properties.Resources.Phong_checkin_Dai_bieu;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1364, 736);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // fCAMERA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -581,7 +581,6 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fCAMERA_FormClosing);
             this.Load += new System.EventHandler(this.fCAMERA_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.fCAMERA_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
@@ -601,8 +600,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptMain)).EndInit();
             this.pnlIPCam.ResumeLayout(false);
             this.pnlIPCam.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
