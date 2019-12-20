@@ -12,3 +12,10 @@ D:\Projects\AttendenceProject\DIEMDANHDAIHOI2019\DTODLL\obj\Debug\DTODLL.csprojA
 D:\Projects\AttendenceProject\DIEMDANHDAIHOI2019\DTODLL\obj\Debug\DTODLL.csproj.CoreCompileInputs.cache
 D:\Projects\AttendenceProject\DIEMDANHDAIHOI2019\DTODLL\obj\Debug\DTODLL.dll
 D:\Projects\AttendenceProject\DIEMDANHDAIHOI2019\DTODLL\obj\Debug\DTODLL.pdb
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\DTODLL\bin\Debug\DTODLL.dll.config
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\DTODLL\bin\Debug\DTODLL.dll
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\DTODLL\bin\Debug\DTODLL.pdb
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\DTODLL\obj\Debug\DTODLL.csprojAssemblyReference.cache
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\DTODLL\obj\Debug\DTODLL.csproj.CoreCompileInputs.cache
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\DTODLL\obj\Debug\DTODLL.dll
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\DTODLL\obj\Debug\DTODLL.pdb

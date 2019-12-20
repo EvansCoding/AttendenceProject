@@ -38,3 +38,23 @@ D:\Projects\AttendenceProject\DIEMDANHDAIHOI2019\BUS\obj\Debug\BUS.csproj.CoreCo
 D:\Projects\AttendenceProject\DIEMDANHDAIHOI2019\BUS\obj\Debug\BUS.csproj.CopyComplete
 D:\Projects\AttendenceProject\DIEMDANHDAIHOI2019\BUS\obj\Debug\BUS.dll
 D:\Projects\AttendenceProject\DIEMDANHDAIHOI2019\BUS\obj\Debug\BUS.pdb
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\BUS\bin\Debug\BUS.dll
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\BUS\bin\Debug\BUS.pdb
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\BUS\bin\Debug\DTODLL.dll
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\BUS\bin\Debug\QRCoder.dll
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\BUS\bin\Debug\System.Drawing.Common.dll
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\BUS\bin\Debug\zxing.dll
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\BUS\bin\Debug\zxing.presentation.dll
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\BUS\bin\Debug\DTODLL.pdb
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\BUS\bin\Debug\DTODLL.dll.config
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\BUS\bin\Debug\zxing.pdb
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\BUS\bin\Debug\zxing.xml
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\BUS\bin\Debug\zxing.presentation.pdb
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\BUS\bin\Debug\zxing.presentation.xml
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\BUS\obj\Debug\BUS.Properties.Resources.resources
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\BUS\obj\Debug\BUS.csproj.GenerateResource.cache
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\BUS\obj\Debug\BUS.dll
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\BUS\obj\Debug\BUS.pdb

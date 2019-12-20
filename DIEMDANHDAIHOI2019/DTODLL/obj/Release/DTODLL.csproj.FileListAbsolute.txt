@@ -1,0 +1,7 @@
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\DTODLL\bin\Release\DTODLL.dll.config
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\DTODLL\bin\Release\DTODLL.dll
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\DTODLL\bin\Release\DTODLL.pdb
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\DTODLL\obj\Release\DTODLL.csprojAssemblyReference.cache
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\DTODLL\obj\Release\DTODLL.csproj.CoreCompileInputs.cache
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\DTODLL\obj\Release\DTODLL.dll
+C:\Users\nguye\Desktop\New folder\AttendenceProject\DIEMDANHDAIHOI2019\DTODLL\obj\Release\DTODLL.pdb
